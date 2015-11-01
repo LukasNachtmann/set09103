@@ -1,0 +1,49 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Blair Castle</h2>
+      <p class="lead">Blair Castle is the ancient seat of the Dukes of Atholl
+      and home to the Atholl Highlanders, the last remaining private army in
+      Europe. Many of its fascinating historical artefacts including antique
+      furniture, art, arms and armour are on public display.</p>
+    <img src="{{ url_for('static', filename='img/blair-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%">Every day</td></tr>
+    <tr><td>1st April - 31th Oct:</td>         <td>09.30am - 5.30pm</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission 1hour before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 10.50</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP 9.00</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Blair Atholl</td>                        <td></td></tr>
+    <tr><td>Perthshire</td>           <td></td></tr>
+    <tr><td>PH18 5TL</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Blair Castle visit the official
+      website:<br />
+      <a href="http://www.blair-castle.co.uk"
+      target=_blank">www.blair-castle.co.uk</a>
+  <br />
+  </div>
+
+{% endblock %}}

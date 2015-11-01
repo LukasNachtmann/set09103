@@ -1,0 +1,51 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Caerlaverock Castle</h2>
+      <p class="lead">Caerlaverock is one of the finest medieval structures in
+      Scotland. Although it is quite ruined inside, some fine carved stone
+      panels, windows and fireplaces indicate the original grandeur of this
+      unique triangular castle.</p>
+    <img src="{{ url_for('static', filename='img/caerlaverock-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%">Every day</td></tr>
+    <tr><td>1st April - 30th Sept:</td>         <td>09.30am - 5.30pm</td></tr>
+    <tr><td>1st Oct - 31th March:</td>        <td>10.00am - 4.00pm</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission half an hour before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 5.50</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP 4.40</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Dumfries</td>                        <td></td></tr>
+    <tr><td>Dumfries and Galloway</td>           <td></td></tr>
+    <tr><td>DG1 4RU</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Caerlaverock Castle visit the official
+      website of historic-scotland:<br />
+      <a
+      href="http://www.historic-scotland.gov.uk/propertyresults/propertyoverview.htm?PropID=PL_047"
+      target=_blank">www.historic-scotland.gov.uk</a>
+  <br />
+  </div>
+
+{% endblock %}}

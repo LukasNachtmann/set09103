@@ -1,0 +1,47 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Dunvegan Castle</h2>
+      <p class="lead">Built on a rocky outcrop, Dunvegan Castle is the oldest
+      continuously inhabited castle in Scotland and has been the ancestral home
+      of the Chiefs of Clan MacLeod for 800 years.</p>
+    <img src="{{ url_for('static', filename='img/dunvegan-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%">Every day</td></tr>
+    <tr><td>1st April - 15th Oct:</td>         <td>10.00am - 5.30pm</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission half an hour before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 11.00</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP 9.00</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Dunvegan</td>                        <td></td></tr>
+    <tr><td>Isle of Skye</td>           <td></td></tr>
+    <tr><td>IV55 8WF</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Dunvegan Castle visit the official
+      website:<br />
+      <a href="http://www.dunvegancastle.com" target=_blank">www.dunvegancastle.com</a>
+  <br />
+  </div>
+
+{% endblock %}}

@@ -1,0 +1,50 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Stirling Castle</h2>
+      <p class="lead">Perched high on volcanic rock, Stirling provides
+      spectacular views over two of Scotland's most historic battlefields -
+      Stirling Bridge and Bannockburn. Much of today's castle dates from the
+      15th - 18th centuries.</p>
+    <img src="{{ url_for('static', filename='img/stirling-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%">Every day</td></tr>
+    <tr><td>1st April - 30th Sept:</td>        <td>09.30am - 6.00pm</td></tr>
+    <tr><td>1st Okt - 31th March:</td>          <td>09.30am - 5.00pm</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission 45min before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 14.50</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP 11.60</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Castle Esplanade</td>                        <td></td></tr>
+    <tr><td>Stirling</td>           <td></td></tr>
+    <tr><td>FK8 1EJ</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Stirling Castle visit the official
+      website:<br />
+      <a href="http://www.stirlingcastle.gov.uk"
+      target=_blank">www.stirlingcastle.gov.uk</a>
+  <br />
+  </div>
+
+{% endblock %}}

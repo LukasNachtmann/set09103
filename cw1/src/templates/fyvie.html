@@ -1,0 +1,51 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Fyvie Castle</h2>
+      <p class="lead">Begun as a simple castle in the 13th century, Fyvie
+      passed through the hands of five powerful families, each of whom added
+      significantly to it. Inside, the magnificent sweeping staircase is the
+      most dramatic feature while many treasures are on display.</p>
+    <img src="{{ url_for('static', filename='img/fyvie-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%"></td></tr>
+    <tr><td>1st April - 30th June:</td>         <td>12.00am - 5.00pm (Sat-Wed)</td></tr>
+    <tr><td>1st July - 31th Aug:</td>        <td>11.00am - 5.00pm (daily)</td></tr>
+    <tr><td>1st Sept - 31th Oct:</td>          <td>12.00am - 5.00pm (Sat-Wed)</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission 1hour before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 12.50</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP  9.00</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Turriff</td>                        <td></td></tr>
+    <tr><td>Aberdeenshire</td>           <td></td></tr>
+    <tr><td>AB53 8JS</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Fyvie Castle visit the official
+      website of National Trust for Scotland:<br />
+      <a href="http://www.nts.org.uk/Property/Fyvie-Castle"
+      target=_blank">www.nts.org.uk</a>
+  <br />
+  </div>
+
+{% endblock %}}

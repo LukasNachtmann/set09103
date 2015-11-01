@@ -1,0 +1,48 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Culzean Castle</h2>
+      <p class="lead">Culzean Castle is the jewel in the crown of the National
+      Trust for Scotland. This grand cliff-top country house was remodelled in
+      the late 18th century by the renowned architect Robert Adam in his trademark neo-classical Georgian style.</p>
+    <img src="{{ url_for('static', filename='img/culzean-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%">Every day</td></tr>
+    <tr><td>28th March - 1st Nov:</td>         <td>10.30am - 5.00pm</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission 1hour before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 15.50</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP 11.50</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Maybole</td>                        <td></td></tr>
+    <tr><td>South Ayrshire</td>           <td></td></tr>
+    <tr><td>KA19 8LE</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Culzean Castle visit the official
+      website of National Trust for Scotland:<br />
+      <a href="http://www.nts.org.uk/Property/Culzean-Castle-and-Country-Park"
+      target=_blank">www.nts.org.uk</a>
+  <br />
+  </div>
+
+{% endblock %}}

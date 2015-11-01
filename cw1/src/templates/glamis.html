@@ -1,0 +1,50 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Glamis Castle</h2>
+      <p class="lead">Glamis is the ancient seat of the Earls of Strathmore,
+      the childhood home of HM Queen Elizabeth The Queen Mother, the birthplace
+      of HRH The Princess Margaret and the legendary setting for Shakespeare's
+      Macbeth. Also it is one of the most haunted castles in Scotland.</p>
+    <img src="{{ url_for('static', filename='img/glamis-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%"><br></td></tr>
+    <tr><td>25th March - 30th Oct:</td>         <td>12.00am - 5.30pm (daily)</td></tr>
+    <tr><td>1st Nov - 20th Dec:</td>         <td>11.00am - 4.00pm (Sat, Sun)</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission 1hour before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 11.00</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP 10.00</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Glamis</td>                        <td></td></tr>
+    <tr><td>Angus</td>           <td></td></tr>
+    <tr><td>DD8 1RJ</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Glamis Castle visit the official
+      website:<br />
+      <a href="http://www.glamis-castle.co.uk"
+      target=_blank">www.glamis-castle.co.uk</a>
+  <br />
+  </div>
+
+{% endblock %}}

@@ -1,0 +1,10 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+      <h4>Here you can see your uploaded picture</h4>
+
+  <img src=" {{ url_for('static', filename='uploads/userpicture1.png') }}">
+  </div>
+
+{% endblock %}}

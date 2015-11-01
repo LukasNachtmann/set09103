@@ -1,0 +1,36 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Here you can find a list of the greatest castles in Scotland</h2>
+      <h4>For more information click on the name of the castle you are
+      interested in</h4>
+  </div>
+
+  <div class="container">
+  
+  <h2>
+  <table border="3">
+    <tr><td align=center width="40%"><a href="/castles/blair">Blair Castle</a></td>               <td><img
+    src="{{ url_for('static', filename='img/blair-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/caerlaverock">Caerlaverock Castle</a></td> <td><img
+    src="{{ url_for('static', filename='img/caerlaverock-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/culzean">Culzean Castle</a></td>           <td><img
+    src="{{ url_for('static', filename='img/culzean-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/dunvegan">Dunvegan Castle</a></td>         <td><img
+    src="{{ url_for('static', filename='img/dunvegan-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/edinburgh">Edinburgh Castle</a></td>       <td><img
+    src="{{ url_for('static', filename='img/edinburgh-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/eileandonan">Eilean Donan Castle</a></td>       <td><img
+    src="{{ url_for('static', filename='img/eilean-donan-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/fyvie">Fyvie Castle</a></td>               <td><img
+    src="{{ url_for('static', filename='img/fyvie-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/glamis">Glamis Castle</a></td>             <td><img
+    src="{{ url_for('static', filename='img/glamis-castle.jpg') }}">   </td></tr>
+    <tr><td align=center><a href="/castles/stirling">Stirling Castle</a></td>         <td><img
+    src="{{ url_for('static', filename='img/stirling-castle.jpg') }}">   </td></tr>
+    </table>
+  </h2>
+
+{% endblock %}}

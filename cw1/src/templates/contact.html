@@ -1,0 +1,36 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Contact</h2>
+      <p>Please give us your feedback or tell us if you have requests.</p>
+
+      <form name="MyForm5" action=mailto:40220839@live.napier.ac.uk
+      method="post">
+
+        Feedback: <br />
+
+        <textarea name="user_eingabe" cols="50" rows="10"></textarea><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+      <br />
+      <br />
+      <h3>Picture Upload</h3>
+      <p>Here you can upload a picture of your choice.<br />
+      We check this picture and maybe we will integrate this in our castle catalogue. 
+      <br />
+      Please click on <a href="http://localhost:5000/contact/upload"
+      target="_blank" >upload</a>
+      <br / ></p>
+      <h4>Thank you for your help!</h4>
+
+     <p>If you want to see your uploaded picture, please click on <a
+     href="http://localhost:5000/contact/upload/userpicture">uploaded
+     picture</a></p>
+  
+  </div>
+
+{% endblock %}}
