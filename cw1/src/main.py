@@ -2,7 +2,7 @@ import ConfigParser
 import logging
 
 from logging.handlers import RotatingFileHandler
-from flask import Flask, request, session, g, redirect, render_template, flash, url_for, abort
+from flask import Flask, request, session, redirect, render_template, flash, url_for, abort
 
 app = Flask(__name__)
 
