@@ -1,0 +1,49 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container-fluid">
+
+      <h2>Edinburgh Castle</h2>
+      <p class="lead">Perched high above the capital, this is Scotland's most
+      important and famous castle. There has been a castle here since the 11th
+      century and today's castle is a mix of military barracks, palace,
+      fortress and war memorial.</p>
+    <img src="{{ url_for('static', filename='img/edinburgh-castle.jpg') }}"
+    vspace="30">
+  </div>
+      
+  <div class="container">
+  <table cellpadding="16" width="35%" style="border-spacing:30px;">
+    
+    <tr><td width="60%"><h4>Opening Hours</h4></td>   <td width="40%">Every day</td></tr>
+    <tr><td>1st April - 30th Sept:</td>         <td>09.30am - 6.00pm</td></tr>
+    <tr><td>1st Oct - 31th March:</td>        <td>09.30am - 5.00pm</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td colspan="2">Last Admission 1hour before closing</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    
+    <tr><td><h4>Admission Fee</h4></td>     <td></td></tr>
+    <tr><td>Adults:</td>                       <td>GBP 16.50</td></tr>
+    <tr><td>Concessions:</td>                  <td>GBP 13.20</td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+   
+    <tr><td><h4>Address</h4></td>              <td></td></tr>
+    <tr><td>Castlehill</td>                        <td></td></tr>
+    <tr><td>Edinburgh</td>           <td></td></tr>
+    <tr><td>EH1 2NG</td>                      <td></td></tr>
+    <tr><td>Scotland</td>                      <td></td></tr>
+    <tr><td><br></td>                          <td></td></tr>
+  </table>
+  </div>
+
+  <div class="container">
+  <br />
+  <p>For more Information about Edinburgh Castle visit the official
+      website:<br />
+      <a href="http://www.edinburghcastle.gov.uk" target="_blank">www.edinburghcastle.gov.uk</a>
+  <br />
+  </div>
+
+{% endblock %}}

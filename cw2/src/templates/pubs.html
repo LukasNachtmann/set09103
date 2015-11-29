@@ -1,0 +1,29 @@
+{% extends "menu.html" %}
+
+  
+
+{% block content %}
+   <div class="container">
+
+      <h2>Pubs in Edinburgh</h2>
+      <h4>This site is currently under construction and is continuously amended. 
+	</br> The idea is to create a database with different types of pubs in Edinburgh</h4>
+
+
+
+
+<h2>Here is a list of the pubs:</h2>
+    
+
+
+<ul class= entries>
+{% for item in entries  %}
+<li>{{ item.pubname }} | {{ item.pubtype }} | {{ item.pubadress }} | {{ item.openingtimes }} | {{ item.website }}</li>
+{% else %}
+<li>No entries yet. SORRY</li>
+{% endfor %}
+</ul>
+
+  </div>
+  
+{% endblock %}}

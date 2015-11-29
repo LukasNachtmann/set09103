@@ -1,0 +1,18 @@
+{% extends "menu.html"  %}
+{% block body %}
+
+<div class="container">
+
+      <h3>User List</h3>
+	<p>All created users are listed here</p>
+
+<ul class= entries>
+{% for item in entries  %}
+<li>{{ item.id_user }} | {{ item.name_user }} | {{ item.email_user }}</li>
+{% else %}
+<li>No entries yet. SORRY</li>
+{% endfor %}
+</ul>
+
+</div>
+{% endblock %}}

@@ -1,0 +1,36 @@
+{% extends "menu.html" %}
+
+{% block title %}Sign Up{% endblock %}
+{% block body %}
+<div class="container">
+  <h2>Sign Up</h2>
+    
+<form action="{{ url_for('createaccount') }}" method="post" name="form" enctype="multipart/form-data">
+<p>
+  <label for="username">Username : </label>
+  <input required type="text" name="username" id="username" placeholder="Choose a username"/>
+</p>
+<p>
+  <label for="email">E-mail :</label>
+  <input required type="email" name="email" id="email" placeholder="Your email"/>
+</p>
+<p>
+  <label for="password">Password :</label>
+  <input required type="password" name="password" id="password" placeholder="Create a password"/>
+</p>
+<p>
+  <label for="confirm_pswd">Confirm your password :</label>
+  <input required type="password" name="confirm_password" id="confirm_password"
+  placeholder="Confirm your password"/>
+</p>
+
+    <input type="submit" value="Sign Up">
+  </form>
+
+{% if error %}
+<p>
+  {{error}}
+</p>
+{% endif %}
+</div>
+{% endblock %}}

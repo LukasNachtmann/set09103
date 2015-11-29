@@ -1,0 +1,37 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Activities in Edinburgh</h2>
+      <h4>You will never get bored in Edinburgh </h4>
+  </div>
+
+  <div class="container">
+  
+  <h3>
+  <table border="0">
+
+    <tr><td align=center width="50%"><a href="http://www.visitscotland.com/see-do/activities/golf/edinburgh-lothians/" target="_blank">Golf</a></td>       <td><img
+    src="{{ url_for('static', filename='img/golf.JPG') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="http://www.visitscotland.com/see-do/activities/cycling/edinburgh-lothians/" target="_blank">Cycling</a></td>       <td><img
+    src="{{ url_for('static', filename='img/cycling.JPG') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="http://www.visitscotland.com/see-do/activities/walking/edinburgh-lothians" target="_blank">Walking</a></td>       <td><img
+    src="{{ url_for('static', filename='img/walking.JPG') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="http://www.visitscotland.com/see-do/activities/adventure/edinburgh-lothians/" target="_blank">Adventure</a></td>       <td><img
+    src="{{ url_for('static', filename='img/adventure.JPG') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="http://www.visitscotland.com/see-do/activities/watersports/edinburgh-lothians" target="_blank">Watersports</a></td>       <td><img
+    src="{{ url_for('static', filename='img/watersports.JPG') }}" width="50%" height="auto">   </td></tr>
+
+
+  
+
+    </table>
+  </h3>
+ </div>
+
+{% endblock %}}

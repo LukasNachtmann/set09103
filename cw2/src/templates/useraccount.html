@@ -1,0 +1,8 @@
+{% extends "menu.html" %}
+{% block content %}
+{% if name %}
+  <h1> Hi! Your name is {{ name }}!</h1>
+{% else %}
+  <h1> Hi! You didn't enter your name.</h1>
+{% endif %}
+{% endblock %}}

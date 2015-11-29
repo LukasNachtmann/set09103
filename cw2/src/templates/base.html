@@ -1,0 +1,16 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container-fluid">
+      <h1>Welcome to Edinburgh!</h1>
+      <h2>Capital of Scotland</h2>
+      <p class="lead">Edinburgh has a medieval Old Town and an elegant Georgian
+      New Town, with gardens and neoclassical buildings. It's home to Arthur's
+      Seat, an extinct volcano in Holyrood Park with sweeping views from its
+      peak. Looming over the city is hilltop Edinburgh Castle, home to
+      Scotland's crown jewels and the Stone of Destiny, traditionally used in the coronation of Scottish rulers.</p>
+  <img src=" {{ url_for('static', filename='img/edinburghcity.JPG') }}" width="100%" height="auto">
+
+  </div>
+
+{% endblock %}}

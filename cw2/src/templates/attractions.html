@@ -1,0 +1,37 @@
+{% extends "menu.html" %}
+{% block content %}
+
+  <div class="container">
+
+      <h2>Attractions in Edinburgh</h2>
+      <h4>Edinburgh has some great attractions to offer </h4>
+  </div>
+
+  <div class="container">
+  
+  <h3>
+  <table border="0">
+
+    <tr><td align=center width="50%"><a href="http://localhost:5000/edinburgh/things-to-do/attractions/edinburgh-castle" target="_blank">Edinburgh Castle</a></td>       <td><img
+    src="{{ url_for('static', filename='img/edinburgh-castle.jpg') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="https://www.royalcollection.org.uk/visit/palace-of-holyroodhouse" target="_blank">Holyrood Palace</a></td>       <td><img
+    src="{{ url_for('static', filename='img/hollyrood.JPG') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="http://www.rbge.org.uk/" target="_blank">Botanic Garden</a></td>       <td><img
+    src="{{ url_for('static', filename='img/botanic.JPG') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="http://www.walkhighlands.co.uk/lothian/arthurs-seat.shtml" target="_blank">Arthur's Seat</a></td>       <td><img
+    src="{{ url_for('static', filename='img/arthursseat.JPG') }}" width="50%" height="auto">   </td></tr>
+
+    <tr><td align=center><a href="http://www.royalyachtbritannia.co.uk/" target="_blank">Royal Yacht Britannia</a></td>       <td><img
+    src="{{ url_for('static', filename='img/britannia.JPG') }}" width="50%" height="auto">   </td></tr>
+
+
+  
+
+    </table>
+  </h3>
+ </div>
+
+{% endblock %}}
